@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adosado en Villas del Golf - Rentprivé</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .operation-detail {
+            padding: 120px 0 4rem;
+        }
+
+        .detail-header {
+            margin-bottom: 2rem;
+        }
+
+        .detail-title {
+            font-family: var(--font-playfair);
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-location {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-gallery {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 200px 200px;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .detail-main-img {
+            grid-row: 1 / -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .detail-side-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .detail-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .metric-item h4 {
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-item p {
+            font-size: 1.5rem;
+            color: var(--color-white);
+            font-weight: bold;
+        }
+
+        .detail-content {
+            max-width: 800px;
+        }
+
+        .detail-content h3 {
+            color: var(--color-white);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .detail-content p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .detail-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .detail-main-img {
+                height: 300px;
+            }
+
+            .detail-side-img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                RENTPRIVÉ
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Sobre Nosotros</a>
+                <a href="operations.html" class="nav-link active">Operaciones</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Acceso Club</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="operation-detail">
+        <div class="container">
+            <div class="detail-header">
+                <h1 class="detail-title">ADOSADO EN VILLAS DEL GOLF</h1>
+                <p class="detail-location">
+                    <i data-lucide="map-pin"></i>
+                    CL E-1 CORNISA DEL SOL, VILLAS DEL GOLF
+                </p>
+            </div>
+
+            <div class="detail-gallery">
+                <img src="assets/images/villas_golf_main.jpg" alt="Villas del Golf Main" class="detail-main-img">
+                <img src="assets/images/villas_golf_aerial.jpg" alt="Villas del Golf Side 1" class="detail-side-img">
+                <img src="assets/images/villas_golf_map.jpg" alt="Villas del Golf Side 2" class="detail-side-img">
+            </div>
+
+            <div class="detail-metrics">
+                <div class="metric-item">
+                    <h4>Rentabilidad</h4>
+                    <p class="text-gold">65,37% Neto</p>
+                </div>
+                <div class="metric-item">
+                    <h4>Plazo Estimado</h4>
+                    <p>4-6 meses</p>
+                </div>
+                <div class="metric-item">
+                    <h4>Inversión Total</h4>
+                    <p>158.317,47€</p>
+                </div>
+            </div>
+
+            <div class="detail-content">
+                <h3>Resumen</h3>
+                <p><strong>Superficie:</strong> 136 m2</p>
+                <p>Ubicación Premium y Activo: Adosado de 136 m2 útiles situado en la prestigiosa urbanización Villas
+                    del Golf, Manilva (Málaga). La urbanización es privada, cuenta con piscinas y campo de golf.</p>
+                <h3>Métricas de Inversión</h3>
+                <p><strong>Inversión Requerida:</strong> 158.317,47 €.</p>
+                <p><strong>Rentabilidad Estimada:</strong> 65,37% Neto.</p>
+                <p><strong>Plazo Estimado:</strong> 4-6 meses.</p>
+                <h3>Riesgo y Fase Procesal</h3>
+                <p>El activo se encuentra en CONVOCATORIA DE SUBASTA. El deudor es extranjero y el inmueble no
+                    constituye vivienda habitual, lo que agiliza el proceso de toma de posesión y minimiza riesgos de
+                    vulnerabilidad.</p>
+
+                <div style="margin-top: 3rem;">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Solicitar Información</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">
+                    RENTPRIVÉ
+                </a>
+                <p>Inversiones inmobiliarias exclusivas y rentables.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="operations.html">Operaciones</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+                <div class="social-links" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/_rentprive/reels/" target="_blank"
+                        style="color: var(--color-gold); display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                        <i data-lucide="instagram"></i>
+                        <span style="font-family: var(--font-playfair);">Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@rentpriv" target="_blank"
+                        style="color: var(--color-gold); display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-tiktok">
+                            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                        </svg>
+                        <span style="font-family: var(--font-playfair);">TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rentprivé. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
